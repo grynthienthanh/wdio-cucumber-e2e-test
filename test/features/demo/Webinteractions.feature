@@ -16,11 +16,16 @@ Feature: Web Interaction
     Scenario: Handling window tab
         Given A web page window handling is opened
         When Switch to window
-    
+
     Scenario: Handling popup
         Given A web page popup is opened
         When Perform web interaction - popup
- Examples:
+
+    Scenario: Hanlind web table
+        Given A web page table is opened
+        When Perform web interaction - popup
+
+        Examples:
             | Test ID    | SearchItem | ExpectedURL           |
             | Demo_TC001 | wdio       | https://webdriver.io/ |
 
